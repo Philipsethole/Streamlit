@@ -50,9 +50,11 @@ def main():
         st.info("Meet the Team")
         st.markdown("""
         **Team Members:**
-        - Member 1
-        - Member 2
-        - Member 3
+        - Phillip Sethole
+        - Musa Khuzwayo 
+        - Mpho Onthatile Moloi 
+        - Lebo Letsoalo 
+        - Kwanda Shandu 
         """)
 
     # Project Overview Page
@@ -73,8 +75,13 @@ def main():
         st.markdown("""
         Visualizations and analysis of the dataset will be displayed here.
         """)
-        # Example placeholder for EDA visualizations
-        st.write("EDA plots coming soon!")
+    # Display the image
+    image_path = "EDA1.png"  
+    st.image(image_path, caption="EDA Visualization", use_column_width=True)
+    
+    # Display the image
+    image_path = "EDA2.png"  
+    st.image(image_path, caption="EDA Visualization", use_column_width=True)
 
     # Prediction Page
     elif selection == "Prediction":
