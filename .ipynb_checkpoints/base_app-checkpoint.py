@@ -75,13 +75,9 @@ def main():
         st.markdown("""
         Visualizations and analysis of the dataset will be displayed here.
         """)
-    # Display the image
-    image_path = "EDA1.png"  
-    st.image(image_path, caption="EDA Visualization", use_column_width=True)
-    
-    # Display the image
-    image_path = "EDA2.png"  
-    st.image(image_path, caption="EDA Visualization", use_column_width=True)
+        # Display the images inside the EDA section
+        st.image("EDA1.png", caption="EDA Visualization 1", use_column_width=True)
+        st.image("EDA2.png", caption="EDA Visualization 2", use_column_width=True)
 
     # Prediction Page
     elif selection == "Prediction":
