@@ -76,8 +76,9 @@ def main():
         Visualizations and analysis of the dataset will be displayed here.
         """)
         # Display the images inside the EDA section
-        st.image("EDA1.png", caption="EDA Visualization 1", use_column_width=True)
-        st.image("EDA2.png", caption="EDA Visualization 2", use_column_width=True)
+        st.image("EDA1.png", caption="Word Cloud for Most Frequent Words", use_container_width=True)
+        st.image("EDA2.png", caption="Top 10 Most Common Words in Each Category", use_container_width=True)
+
 
     # Prediction Page
     elif selection == "Prediction":
