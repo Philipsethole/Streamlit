@@ -92,11 +92,11 @@ def main():
             # Load the selected model
             try:
                 if model_choice == "Logistic Regression":
-                    predictor = joblib.load(open(os.path.join("logistic_regression_model.pkl"), "rb"))
+                    predictor = joblib.load(open(os.path.join("best_log_reg_model.pkl"), "rb"))
                 elif model_choice == "Support vector machine":
-                    predictor = joblib.load(open(os.path.join("svm_model.pkl"), "rb"))
+                    predictor = joblib.load(open(os.path.join("best_log_reg_model.pkl"), "rb"))
                 elif model_choice == "Neural network classifier":
-                    predictor = joblib.load(open(os.path.join("neural_network_model.pkl"), "rb"))
+                    predictor = joblib.load(open(os.path.join("best_nn_model.pkl"), "rb"))
                 # Make predictions
                 prediction = predictor.predict(vect_text)
 
